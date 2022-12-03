@@ -9,7 +9,7 @@ def search_file(file, word_find, word_replace):
 print(search_file("hw12.txt","4","stope"))
 
 # 2. Подсчет количества слов в содержимом текстового файла
-#Taran Andrey
+
 def score(file):
     with open(file, mode="r") as f:
         li1 = f.readline()
