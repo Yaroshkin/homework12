@@ -1,18 +1,12 @@
 
 # 1.Поиск и замена слов в содержимом текстового файла
-file_filling = str((input("fill the file ")).split(" "))
-with open ("hw12.txt", "w") as f:
-    f.write(file_filling)
-search_file_name = input("Enter file name ")
-change_word = input("enter change ")
-what_to_change = input("what to change ")
 def search_file(file, word_find, word_replace):
     with open(file, mode="r") as f:
         li1 = f.readline()
     with open(file, mode="w") as f:
         li1 = li1.replace(word_find,word_replace)
         f.writelines(li1)
-search_file(search_file_name,change_word,what_to_change)
+print(search_file("hw12.txt","stope","6"))
 
 # 2. Подсчет количества слов в содержимом текстового файла
 
